@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/llout_pdf_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <ImageView
+            android:id="@+id/iv_pdf_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:alpha=".8"
+            android:background="@drawable/circle_blue"
+            android:padding="5dp"
+            app:srcCompat="@drawable/ic_pdf_file" />
+
+    <LinearLayout
+            android:id="@+id/llout_pdf_item1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:layout_toEndOf="@+id/iv_pdf_icon"
+            android:orientation="vertical"
+        android:layout_toRightOf="@+id/iv_pdf_icon">
+
+        <TextView
+                android:id="@+id/tv_pdf_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:padding="2dp"
+                android:text="1234"
+                android:textSize="14sp" />
+
+        <TextView
+                android:id="@+id/tv_pdf_file_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="1234"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textSize="12sp" />
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/llout_pdf_item1"
+            android:layout_marginTop="2dp"
+            android:alpha=".2"/>
+
+</RelativeLayout>
